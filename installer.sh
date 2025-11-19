@@ -1,5 +1,6 @@
 #!/bin/bash
-rpm --import https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux && \
+curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux https://repo.almalinux.org/almalinux/RPM-GPG-KEY-AlmaLinux && \
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux && \
 dnf update -y && \
 dnf install epel-release -y && \
 dnf upgrade -y && \

@@ -33,4 +33,5 @@ esac
 # 3. Jalankan installer CyberPanel
 # Catatan: Jangan gunakan 'exec' di sini agar proses tetap interaktif
 echo "Memulai installer CyberPanel..."
+exec bash
 sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/install.sh)

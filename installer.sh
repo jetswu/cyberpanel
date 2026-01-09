@@ -31,6 +31,4 @@ case "$OS" in
 esac
 
 # 3. Jalankan installer CyberPanel
-# Catatan: Jangan gunakan 'exec' di sini agar proses tetap interaktif
-exec bash
 sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/install.sh)

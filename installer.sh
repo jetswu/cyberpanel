@@ -1,4 +1,5 @@
 #!/bin/bash
-dnf update -y && \
-dnf install epel-release -y && \
-wget -O install.sh https://cyberpanel.net/install.sh && sh install.sh
+dnf update -y
+dnf install epel-release -y
+wget -O installer.sh https://cyberpanel.net/install.sh
+sh installer.sh
